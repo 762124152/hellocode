@@ -1,0 +1,284 @@
+/****************** 最顶部css    ****************** */
+.top {
+    height: 40px;
+    background: #f2f2f2;
+    border: 2px solid #ccc;
+    font: 14px/42px "";
+}
+
+.top .margin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .top-left img {
+    margin-left: 30px;
+}
+
+.top .top-right a {
+    margin-left: 30px;
+}
+
+.top .top-right a:hover {
+    color: red;
+}
+
+.top .top-right a span {
+    color: purple
+}
+
+/**************** logo和表单css ****************/
+
+
+
+
+
+
+header .margin {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .margin .header-left img {
+    margin: 30px 0 15px;
+}
+
+header .margin .header-right {
+    width: 750px;
+}
+
+header .margin .header-right form {
+    margin-top: 30px;
+}
+
+header .margin .header-right form input[name="text"] {
+    width: 450px;
+    border: 1px solid purple;
+    height: 46px;
+    font: 22px/46px "";
+    float: left;
+}
+
+header .margin .header-right form input[name="search"] {
+    width: 75px;
+    height: 50px;
+    margin: 0;
+    float: left;
+    background: url(../imgaes/head/search.png) no-repeat center;
+    border: 0;
+}
+
+header .margin .header-right form input[name="car"] {
+    width: 110px;
+    height: 50px;
+    float: left;
+    background: url(../imgaes/head/shoppingCar.png) no-repeat center;
+    margin-left: 20px;
+    border: 0;
+}
+
+header .margin .header-right .header-ul {
+    display: flex;
+    margin-top: 90px;
+}
+
+header .margin .header-right .header-ul a:hover {
+    color: red;
+}
+
+header .margin .header-right .header-ul li .aRed {
+    color: red
+}
+
+/* ***************************菜单nav 部分 *****************************/
+nav{height: 50px; border-bottom: 2px solid purple; }
+nav a:hover{color: red}
+nav .margin{position: relative;}
+nav .menu{display: flex;}
+nav .menu dd{width:100px; height: 50px; font:20px/50px "";text-align: center; font-weight: 600;}
+nav .menu-list {position: absolute; background: #6f00af; width: 240px; height: 450px; top:52px; color: #fff;
+    display: none; z-index: 999;
+}
+nav .menu-list li{width: 240px; padding-top:5px ; margin-top: 15px;}
+nav .menu-list li p{font: 20px/32px ""; display: flex; justify-content: space-between; }
+nav .menu-list li a{color:#fff; font:16px/24px "";}
+nav .menu-list li a:hover{color: red}
+nav .menu-list li .menu-list2{position: absolute; left: 240px; top:0;color: black; 
+    border: 1px solid #ccc; height: 450px; display:none; background: #fff;
+}
+nav .menu-list li .menu-list2 dt{display: flex; width: 530px; height: 55px; margin:25px 0 0 25px;}
+nav .menu-list li .menu-list2 dt i{font:24px/55px ""; margin-left: 25px;}
+nav .menu-list li .menu-list2 dt .brand{position: absolute; left:555px; top:0; width:227px;
+    border: 1px solid #ccc; font:32px/48px ""; text-align: center; background: #fff;
+}
+nav .menu-list li .menu-list2 dd{margin:25px 0 0 25px; font: 18px/64px ""; font-weight: 700; border: 1px solid #eee;
+   ; border-left:none;
+}
+nav .menu-list li .menu-list2 dd a{color:black; margin-left: 10px;}
+nav .menu-list li .menu-list2 dd a:hover{color: red}
+
+
+
+
+/***************** 四个图标部分 footer1 *******************/
+.footer-1 {
+    height: 105px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.footer-1 .service {
+    display: flex;
+    justify-content: space-around;
+    flex: auto;
+    padding-top: 20px;
+}
+
+.footer-1 .service li {
+    position: relative;
+}
+
+.footer-1 .service i {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.footer-1 .service .service-i1 {
+    background: url(../imgaes/head/jiangzhang.png) no-repeat center;
+}
+
+.footer-1 .service .service-i2 {
+    background: url(../imgaes/head/plane.png) no-repeat center;
+}
+
+.footer-1 .service .service-i3 {
+    background: url(../imgaes/head/dunpai.png) no-repeat center;
+}
+
+.footer-1 .service .service-i4 {
+    background: url(../imgaes/head/kefu.png) no-repeat center;
+}
+
+.footer-1 .service strong {
+    font: 23px/28px "";
+    position: absolute;
+    left: 65px;
+    top: 0;
+    width: 150px;
+}
+
+.footer-1 .service span {
+    font: 14px/24px "";
+    position: absolute;
+    left: 65px;
+    top: 40px;
+    width: 150px;
+}
+
+
+
+/* *************中间指南部分 ulli ******************/
+.footer-2 {
+    padding: 30px 0;
+}
+
+.footer-2 .margin {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-2 ul li {
+    width: 115px;
+    height: 130px;
+    border-right: 1px solid #eee;
+    margin-right: 34px;
+    float: left;
+    width: 160px;
+}
+
+.footer-2 ul li b {
+    font: 18px/24px "";
+    display: block;
+}
+
+.footer-2 ul li a {
+    display: block;
+    font: 14px/24px "";
+}
+
+.footer-2 ul li a:hover {
+    color: red
+}
+
+.footer-2 .footer-2-c {
+    margin: 20px 40px 20px 0;
+}
+
+.footer-2 .footer-2-c h5 {
+    display: block;
+    font: 32px/38px "";
+    font-weight: 700;
+    color: purple;
+    border-bottom: 1px solid purple;
+}
+
+.footer-2 .footer-2-c .footer-2-c1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-2 .footer-2-c .footer-2-c1 b {
+    font: 14px/2 "";
+    color: purple;
+}
+
+.footer-2 .footer-2-r {
+    margin-right: 25px;
+}
+
+.footer-2 .footer-2-r span {
+    display: block;
+    font: 16px/24px "";
+    text-align: center;
+}
+
+
+/**************** 脚底部分 ********************/
+.footer-3 {
+    background: #000;
+    color: #fff;
+}
+
+.footer-3 a {
+    color: #fff;
+}
+
+.footer-3 a:hover {
+    color: red;
+}
+
+.footer-3 .footer-3-t {
+    margin: 0 auto;
+    font: 24px/66px "";
+    text-align: center;
+}
+
+.footer-3 .footer-3-c {
+    text-align: center;
+}
+
+.footer-3 .footer-3-c a {
+    font: 18px/24px "";
+    margin-right: 15px;
+}
+
+.footer-3 p {
+    text-align: center;
+    font: 16px/36px "";
+}
+
+.footer-3 img {
+    display: block;
+    margin: 0 auto;
+}

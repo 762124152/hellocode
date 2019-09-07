@@ -1,0 +1,37 @@
+/************** 轮播图 **************/
+.swiper-container {
+    width: 1500px;
+    height: 450px;
+} 
+/******************* js渲染模板 **********************/
+.main-title{height:36px;padding-top: 50px;}
+.main-title span{font:25px/36px ""; font-weight: 700;}
+.main-title a{font:18px/36px "";}
+.main-title a:hover{color: red}
+.main-part{display: flex; justify-content: space-around;}
+.main-part .part-l img{display: block; width:325px; height: 650px;}
+.main-part .part-c{display: flex;justify-content:center; flex-wrap:wrap; width:800px; height:650px;}
+.main-part .part-c a{width:400px; height: 300px;}
+.main-part .part-c a:hover{color:red}
+.main-part .part-c a span{display: block;font:20px/3 ""; font-weight: 600; text-align: center;}
+.main-part .part-c a .part-r-price{display: flex; justify-content: center; font:18px/1 "";}
+.main-part .part-c a .part-r-price i{color:red;}
+.main-part .part-c a .part-r-price b{text-decoration:line-through; color: #ccc; margin-left:50px;}
+.main-part .part-c a  .part-c-img{display: block; margin: 0 auto; height: 180px; width: 180px;}
+.main-part .part-r{width: 300px;}
+.main-part .part-r h6{font: 18px/60px "";}
+.main-part .part-r ul li{height: 130px; border-bottom: 1px dashed #ccc; padding: 10px 0;}
+.main-part .part-r ul li a:hover{color: red}
+.main-part .part-r ul li a img{width: 120px; height: 120px; float: left;}
+.main-part .part-r ul li a .part-r-tea{float: left; font:15px/50px "";}
+.main-part .part-r ul li a .part-r-price{display: flex;justify-content: space-between; }
+.main-part .part-r ul li a .part-r-price i{color:red}
+/************** 热门品牌 **************/
+.hot h4{font:22px/88px ""; font-weight: 600;}
+.hot .hot-flex{display: flex; justify-content: center;}
+.hot ul{position: relative; border: 1px solid #ccc; }
+.hot ul li .hot-logo{position: absolute;left:100px; top:260px;}
+.hot ul li .hot-a{display: block;margin:40px 0 20px 0; }
+.hot ul li .hot-a:hover{color: red}
+.hot ul li .hot-a span{display: block; font:18px/24px ""; font-weight: 600;text-align: center;}
+.hot ul li .hot-a p{font:14px/24px ""; text-align: center; display: block;}

@@ -1,0 +1,52 @@
+{
+   "main-title":["女性保健","男性健康","孝敬爸妈","增强免疫","滋养补身"],
+   "title-a":["葡萄籽","番茄红素","gnc","汤臣倍健","西洋参"],
+   "goods-left1":["./imgaes/main/main-1.jpg","./imgaes/main/main-1.jpg","./imgaes/main/main-1.jpg","./imgaes/main/main-1.jpg","./imgaes/main/main-1.jpg"],
+   
+   "part-c1":["中药肚脐贴","五宝茶","紫一Q10软胶囊","艾草足贴","绿萝花"],
+    "c1-price":["￥68.00","￥69.00","￥99.00","￥49.80","￥59.80"],
+    "c1-noprice":["￥158.00","￥99.00","￥398.00","￥68.00","￥98.00"],
+    "goods-1":["./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg"],
+
+    "part-c2":["一时国际奶昔","华宝通","辣木籽","睡眠片","虫草花"],
+    "c2-price":["￥68.00","￥98.00","￥59.00","￥69.80","￥68.80"],
+    "c2-noprice":["298.00","248.00","129.00","￥199.00","￥106.00"],
+    "goods-2":["./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg"],
+
+    "part-c3":["一号真爱无言","，牡蛎精胶囊","西芹籽","乐康膏果蔬片","野生葛根"],
+    "c3-price":["￥299.00","￥108.00","￥88.00","￥65.80","￥69.80"],
+    "c3-noprice":["￥299.00","￥336.00","￥269.00","￥203.00","￥188.00"],
+    "goods-3":["./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg"],
+
+    "part-c4":["福东海","他爱她","隔心木","汤臣倍健","云南丽江"],
+    "c4-price":["￥59.80","￥88.00","￥59.80","￥78.80","￥59.80"],
+    "c4-noprice":["￥299.00","￥336.00","￥269.00","￥203.00","￥188.00"],
+    "goods-4":["./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg","./imgaes/main/main-2.jpg"],
+
+    "part-r1":["./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png"],
+    "r1-title1":["精华胶囊","五宝茶","辅酶Q10","银杏叶精华","三七粉"],
+    "r1-price":["￥89.00","￥59.00","￥158.00","￥168.80","￥99.00"],
+    "r1-comment":["4481","7937","5036","3791","4127"],
+
+
+    "part-r2":["./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png"],
+    "r2-title1":["葡萄籽","黑豹","纳豆胶囊","新养道","长白山菊"],
+    "r2-price":["￥139.00","￥128.00","￥598.00","￥149.80","￥49.8"],
+    "r2-comment":["8643","1571","6542","2231","2323"],
+
+    "part-r3":["./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png"],
+    "r3-title1":["月见草","紫一b族","汤臣倍健","叶黄素","西藏藏红花"],
+    "r3-price":["￥108.00","￥39.00","￥168.00","￥79.80","￥89.8"],
+    "r3-comment":["5531","5571","3851","5453","7786"],
+
+    "part-r4":["./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png","./imgaes/main/1logo.png"],
+    "r4-title1":["维生素c","人参海狗丸","硫酸燃骨完","脱发胶囊","苦丁茶"],
+    "r4-price":["￥59.8","￥119.00","￥99.00","￥88.00","￥98.8"],
+    "r4-comment":["56251","4571","382","5363","8071"]
+
+
+
+
+
+
+}   
