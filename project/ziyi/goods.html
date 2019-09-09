@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>紫一商城</title>
+    <title>商品详情页面</title>
     <link rel="stylesheet" href="./css/public.css" />
     <link href="./css/header.css" rel="stylesheet" type="text/css" />
-    <link href="./css/main.css" rel="stylesheet" type="text/css" />
-    <link href="./libs/swiper.min.css" rel="stylesheet" type="text/css" />
-    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+    <link href="./css/goods.css" rel="stylesheet" type="text/css" />
+    
 </head>
-
 <body>
-    <!--------------------- 顶部top -------------------->
+      <!--------------------- 顶部top -------------------->
     <div class="top">
         <div class="margin">
             <div class="top-left">
@@ -312,212 +309,57 @@
         </div>
     </nav>
 
-
-    <!---------------- 轮播图 ---------------->
-
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./imgaes/banner/linbotu1.jpg" /></div>
-            <div class="swiper-slide"><img src="./imgaes/banner/lunbotu2.jpg" /></div>
-            <div class="swiper-slide"><img src="./imgaes/banner/lunbotu3.jpg" /></div>
+<!---------------------------- 商品简介---------------------------- -->
+    <div class="route">
+    <div class="margin">
+        <div class="goods-title">
+            <a href="project/ziyi/home.html">首页</a>
+            <span>&gt;</span>
+            <i>商品标题1 数据1</i>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
-    </div>
-
-
-    <!--------------------js渲染部分模板图---------------------->
-    <div class="main">
-        <div class="margin">
-        <div id="jsXuanRan">
-            <p class="main-title">
-                <span>紫一推荐</span>
-                <a href="#">专业营养师 一对一定制健康</a>
-            </p>
-            <div class="main-part">
-                <div class="part-l">
-                    <a href="#">
-                        <img src="./imgaes/main/main-1.jpg" />
-                    </a>
-                </div>
-                 <!-- 最近热卖 中间部分 -->
-                <div class="part-c">
-                    <a href="#">
-                        <span>五宝茶 枸杞黄精桑葚男人养生茶 216g*盒</span>
-                        <div class="part-r-price">
-                            <i>￥69.00</i>
-                            <b> ￥99.00</b>
-                        </div>
-                        <img class="part-c-img" src="./imgaes/main/main-2.jpg" />
-                    </a>
-                    <a href="#">
-                        <span>华宝通 牡蛎肽杞精片</span>
-                        <div class="part-r-price">
-                            <i>￥98.00</i>
-                            <b> ￥248.00</b>
-                        </div>
-                        <img class="part-c-img" src="./imgaes/main/main-3.jpg" />
-                    </a>
-                    <a href="#">
-                        <span>goodhealth/好健康 牡蛎精胶囊 60粒*瓶</span>
-                        <div class="part-r-price">
-                            <i>￥108.00</i>
-                            <b> ￥336.00</b>
-                        </div>
-                        <img class="part-c-img" src="./imgaes/main/main-4.jpg" />
-                    </a>
-                    <a href="#">
-                        <span>他她爱tatai 夜焰男外用延时喷剂 10ml</span>
-                        <div class="part-r-price">
-                            <i>￥39.90</i>
-                            <b> ￥147.00</b>
-                        </div>
-                        <img class="part-c-img" src="./imgaes/main/main-5.jpg" />
-                    </a>
-                </div>
-                <!-- 最近热卖 最右边部分 -->
-                <div class="part-r">
-                    <h6>最近热卖</h6>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./imgaes/main/main-r1.jpg" />
-                                <div class="part-r-tea">
-                                    <b>沁花苑 五宝茶 5g*30包*盒</b>
-                                    <div class="part-r-price">
-                                        <i>￥59.00</i>
-                                        <span>7937</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="沁花苑 五宝茶" />
-                                <div class="part-r-tea">
-                                    <b>中药肚脐贴 10片*盒</b>
-                                    <div class="part-r-price">
-                                        <i>￥59.00</i>
-                                        <span>7937</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./imgaes/main/main-r3.jpg" />
-                                <div class="part-r-tea">
-                                    <b>黑豹 男用延时喷剂</b>
-                                    <div class="part-r-price">
-                                        <i>￥59.00</i>
-                                        <span>7937</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./imgaes/main/main-r4.jpg" />
-                                <div class="part-r-tea">
-                                    <b>沁花苑 五宝茶 5g*30包*盒</b>
-                                    <div class="part-r-price">
-                                        <i>￥59.00</i>
-                                        <span>7937</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="goods-main">
+            <div class="main-l">
+                <img src="数据2" />
+                <span>商品编号数据id</span>
             </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <!--------------------热门品牌---------------------->
-    <div class="hot">
-        <div class="margin">
-            <h4>热门品牌</h4>
-            <div class="hot-flex">
-                <ul>
-                    <li>
-                        <img class="hot-logo" src="./imgaes/main/1logo.png" />
-                        <a href="#"><img src="./imgaes/main/c1.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                普丽普莱 全家人的健康管理师
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img class="hot-logo" src="./imgaes/main/2logo.png" />
-                        <a href="#"><img src="./imgaes/main/c2.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                普丽普莱 全家人的健康管理师
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img class="hot-logo" src="./imgaes/main/3logo.png" />
-                        <a href="#"><img src="./imgaes/main/c3.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                普丽普莱 全家人的健康管理师
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img class="hot-logo" src="./imgaes/main/4logo.png" />
-                        <a href="#"><img src="./imgaes/main/c4.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                <p> 普丽普莱 全家人的健康管理师</p>
-
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img class="hot-logo" src="./imgaes/main/3logo.png" />
-                        <a href="#"><img src="./imgaes/main/c1.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                <p> 普丽普莱 全家人的健康管理师</p>
-
-                        </a>
-                    </li>
-                </ul>
+            <div class="main-c">
+                <h5>数据3</h5>
+                <div class="c-price">
+                    <i>售价：</i>
+                    <b>数据4</b>
+                    <span>包邮</span>
+                    <span>货到付款</span>
+                    <em>参考价 数据4</em>
+                </div>
+                <div>
+                    <i>促销：<span>买2减20元</span></i>
+                    <a href="#">★★★★★ 95.56%</a>
+                    <form>
+                        <input type="button" name="-" value="-">
+                        <input type="text" name="num" value="1">
+                        <input type="button" name="+" value="+">
+                    </form>
+                </div>
+                <div class="c-buy">
+                    <a>立即购买</a>
+                    <a>加入购物车</a>
+                </div>
+                <p>100%正品 | 低价保障 | 7天无忧退货 | 专业营养师</p>
             </div>
+            <div class="main-r">
+                <img src="店铺"/>
+                <a href="#">店铺名</a>
+                <a href="#">进入店铺</a>
+                <span>在售商品115件</span>
+            </img>
         </div>
+    </div>
     </div>
 
 
 
-
-
-    <!---------- footer 三部分 footer-1 2 3 ---------------->
-    <div class="footer-1">
+     <!---------- footer 三部分 footer-1 2 3 ---------------->
+     <div class="footer-1">
         <div class="margin">
             <ul class="service">
                 <li>
@@ -596,6 +438,42 @@
         </div>
     </div>
 
+    <div class="nav">
+        <div class="margin">
+            <a href="http://http://localhost/project/ziyi/goods.html">首页</a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ------------------foot 底部第三部分（黑色）------------ -->
     <div class="footer-3">
         <div class="margin">
@@ -622,14 +500,7 @@
             <a href="#"><img src="./imgaes/head/guohui.png" /></a>
         </div>
     </div>
-
-    <script src="./libs/jquery.js"></script>
-    <script src="./libs/swiper.min.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/ctrl.js"></script>
-    <script src="./js/home.js"></script>
-
 </body>
-
-
+<script src="./libs/jquery.js"></script>
+<script src="./js/header.js"></script>
 </html>

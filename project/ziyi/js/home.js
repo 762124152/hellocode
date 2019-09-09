@@ -11,7 +11,7 @@
                       
                     str+=`
                         <p class="main-title">
-                            <span>+${res[i]["mian-title"]}+</span>
+                            <span>${res[i]["mian-title"]}</span>
                             <a href="#">${res[i]["mian-title"]}</a>
                         </p>
                         <div class="main-part">
@@ -54,7 +54,7 @@
                                     <img class="part-c-img" src="${res[i]["goods-4"]}" />
                                 </a>
                             </div>
-                            <!-- 最近热卖 最右边部分 -->
+            
                             <div class="part-r">
                                 <h6>最近热卖</h6>
                                 <ul>

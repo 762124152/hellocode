@@ -1,0 +1,7 @@
+.logon-main{position: relative;}
+.logon-main .logon-bg{width: 1500px; height: 450px;}
+.logon-main .logon{position: absolute; left: 1050px; top:70px; z-index: 999; background: #fff; width:360px;height: 300px; padding: 20px;} 
+.logon-main .logon h5{font:28px/50px "";text-align: center;margin-bottom: 10px;}
+.logon-main .logon form{font:22px/22px "";}
+.logon-main .logon form input{height: 30px; width: 200px; margin-top: 10px;}
+.logon-main .logon form .checkbox{width:15px; height: 15px; margin-left:15px;}

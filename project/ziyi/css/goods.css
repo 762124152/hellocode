@@ -1,0 +1,5 @@
+/* 商品详情css */
+.goods-title{font:18px/56px "";}
+.goods-title a:hover{color:greenyellow};
+.goods-main{display: flex; justify-content: space-between;}
+.goods-main .mian-l img{width: 450px; height: 450px;}
