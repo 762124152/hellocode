@@ -1,15 +1,16 @@
-;(function(){
-    class HomeAjax{
-        constructor(){
-           
-           
+;
+(function () {
+    class HomeAjax {
+        constructor() {
+
+
             $.ajax({
-                url:"http://localhost/project/ziyi/data/home2.json",
-                success:function(res){
-                    var str="";
-                  for(var i in res){
-                      
-                    str+=`
+                url: "http://localhost/project/ziyi/data/home2.json",
+                success: function (res) {
+                    var str = "";
+                    for (var i in res) {
+
+                        str += `
                         <p class="main-title">
                             <span>${res[i]["mian-title"]}</span>
                             <a href="#">${res[i]["mian-title"]}</a>
@@ -117,11 +118,22 @@
                         </div>
                     </div>
                 </div>`;
-                  }
-                  this.jsXuanRan=document.getElementById("jsXuanRan");
-                  this.jsXuanRan.innerHTML=str
+                
+                    }
+                    this.jsXuanRan = document.getElementById("jsXuanRan");
+                    this.jsXuanRan.innerHTML = str
                 }
             })
+
+            this.a=JSON.parse(localStorage.getItem("state"));
+            console.log(this.a);
+            if(this.a=1){
+                this.a1=document.getElementsByClassName("topRightA")[0];
+                this.a2=document.getElementsByClassName("topRightA2")[0];
+                this.a1.style.display="none";
+                this.a2.style.display="inline-block";
+            }
+            
 
         }
     }

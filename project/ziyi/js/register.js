@@ -70,6 +70,7 @@
                     }
                 }
             }
+            //注册时判断checkbox 和存储loacalstorage
             this.btnObj.onclick=(eve)=>{
                 eve=eve|| window.event;
                 //判断checkbox是否点击
@@ -103,7 +104,8 @@
                     var state = true;
                     for(var i=0;i<this.users.length;i++){
                         if(this.users[i].user === this.userObj.value){
-                            alert("您已注册过，无需再次注册")
+                            alert("您已注册过，无需再次注册");
+                            window.location.href="login.html";
                             state=false;
                             
                         }

@@ -1,0 +1,48 @@
+.list a {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin: 10px 10px 0 0;
+    margin-right: 40px;
+}
+
+.list a:hover {
+    color: red
+}
+
+.list a ul li i {
+    font: 22px/26px "";
+    color: red;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+
+.list a ul li b {
+    font: 14px/24px "";
+    color: red;
+    border: 1px solid red;
+    padding: 2px;
+}
+
+.list a ul li p {
+    font: 16px/28px "";
+    margin-left: 30px;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list a ul .threeLi {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.listBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+#myPage{
+   text-align: center; margin-bottom: 20px;
+}

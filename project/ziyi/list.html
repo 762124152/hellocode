@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>紫一商城</title>
+    <title>商品列表</title>
     <link rel="stylesheet" href="./css/public.css" />
     <link href="./css/header.css" rel="stylesheet" type="text/css" />
-    <link href="./css/main.css" rel="stylesheet" type="text/css" />
-    <link href="./libs/swiper.min.css" rel="stylesheet" type="text/css" />
-    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+    <link href="./css/list.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="./libs/jquery.sPage.css">
 </head>
-
 <body>
     <!--------------------- 顶部top -------------------->
     <div class="top">
@@ -22,8 +19,7 @@
                 <a href="#"><img src="./imgaes/head/publicNumber.png" /></a>
             </div>
             <div class="top-right">
-                <a href="login.html" class="topRightA">登录</a>
-                <a href="login.html" class="topRightA2">注销</a>
+                <a href="login.html">登录</a>
                 <a href="#">我的订单</a>
                 <a href="#">客服热线：<span>400-189-1399</span></a>
             </div>
@@ -314,323 +310,178 @@
     </nav>
 
 
-    <!---------------- 轮播图 ---------------->
-
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./imgaes/banner/linbotu1.jpg" /></div>
-            <div class="swiper-slide"><img src="./imgaes/banner/lunbotu2.jpg" /></div>
-            <div class="swiper-slide"><img src="./imgaes/banner/lunbotu3.jpg" /></div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
-    </div>
-
-
-    <!--------------------js渲染部分模板图---------------------->
-    <div class="main">
-        <div class="margin">
-        <div id="jsXuanRan">
-            <p class="main-title">
-                <span>紫一推荐</span>
-                <a href="#">专业营养师 一对一定制健康</a>
-            </p>
-            <div class="main-part">
-                <div class="part-l">
-                    <a href="#">
-                        <img src="./imgaes/main/main-1.jpg" />
-                    </a>
-                </div>
-                 <!-- 最近热卖 中间部分 -->
-                <div class="part-c">
-                    <a href="#">
-                        <span>五宝茶 枸杞黄精桑葚男人养生茶 216g*盒</span>
-                        <div class="part-r-price">
-                            <i>￥69.00</i>
-                            <b> ￥99.00</b>
-                        </div>
-                        <img class="part-c-img" src="./imgaes/main/main-2.jpg" />
-                    </a>
-                    <a href="#">
-                        <span>华宝通 牡蛎肽杞精片</span>
-                        <div class="part-r-price">
-                            <i>￥98.00</i>
-                            <b> ￥248.00</b>
-                        </div>
-                        <img class="part-c-img" src="./imgaes/main/main-3.jpg" />
-                    </a>
-                    <a href="#">
-                        <span>goodhealth/好健康 牡蛎精胶囊 60粒*瓶</span>
-                        <div class="part-r-price">
-                            <i>￥108.00</i>
-                            <b> ￥336.00</b>
-                        </div>
-                        <img class="part-c-img" src="./imgaes/main/main-4.jpg" />
-                    </a>
-                    <a href="#">
-                        <span>他她爱tatai 夜焰男外用延时喷剂 10ml</span>
-                        <div class="part-r-price">
-                            <i>￥39.90</i>
-                            <b> ￥147.00</b>
-                        </div>
-                        <img class="part-c-img" src="./imgaes/main/main-5.jpg" />
-                    </a>
-                </div>
-                <!-- 最近热卖 最右边部分 -->
-                <div class="part-r">
-                    <h6>最近热卖</h6>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./imgaes/main/main-r1.jpg" />
-                                <div class="part-r-tea">
-                                    <b>沁花苑 五宝茶 5g*30包*盒</b>
-                                    <div class="part-r-price">
-                                        <i>￥59.00</i>
-                                        <span>7937</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="沁花苑 五宝茶" />
-                                <div class="part-r-tea">
-                                    <b>中药肚脐贴 10片*盒</b>
-                                    <div class="part-r-price">
-                                        <i>￥59.00</i>
-                                        <span>7937</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./imgaes/main/main-r3.jpg" />
-                                <div class="part-r-tea">
-                                    <b>黑豹 男用延时喷剂</b>
-                                    <div class="part-r-price">
-                                        <i>￥59.00</i>
-                                        <span>7937</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./imgaes/main/main-r4.jpg" />
-                                <div class="part-r-tea">
-                                    <b>沁花苑 五宝茶 5g*30包*盒</b>
-                                    <div class="part-r-price">
-                                        <i>￥59.00</i>
-                                        <span>7937</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <!--------------------热门品牌---------------------->
-    <div class="hot">
-        <div class="margin">
-            <h4>热门品牌</h4>
-            <div class="hot-flex">
+    <!------------------ 中间渲染部分------------------ -->
+    <div class="list">
+    <div class="margin">
+        <div class="listBox">
+            <a href="#">
                 <ul>
                     <li>
-                        <img class="hot-logo" src="./imgaes/main/1logo.png" />
-                        <a href="#"><img src="./imgaes/main/c1.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                普丽普莱 全家人的健康管理师
-                            </p>
-                        </a>
+                        <img src="./imgaes/list/list-2.jpg"/>
                     </li>
-                </ul>
-                <ul>
                     <li>
-                        <img class="hot-logo" src="./imgaes/main/2logo.png" />
-                        <a href="#"><img src="./imgaes/main/c2.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                普丽普莱 全家人的健康管理师
-                            </p>
-                        </a>
+                        <i>￥175.00</i>
+                        <b>包邮</b>
                     </li>
-                </ul>
-                <ul>
                     <li>
-                        <img class="hot-logo" src="./imgaes/main/3logo.png" />
-                        <a href="#"><img src="./imgaes/main/c3.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                普丽普莱 全家人的健康管理师
-                            </p>
-                        </a>
+                        <p>维生素C咀嚼片</p>
+                    </li>
+                    <li class="threeLi">
+                        <span>131</span>
+                        <em>90.74%好评</em>
                     </li>
                 </ul>
-                <ul>
-                    <li>
-                        <img class="hot-logo" src="./imgaes/main/4logo.png" />
-                        <a href="#"><img src="./imgaes/main/c4.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                <p> 普丽普莱 全家人的健康管理师</p>
-
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img class="hot-logo" src="./imgaes/main/3logo.png" />
-                        <a href="#"><img src="./imgaes/main/c1.jpg"></a>
-                        <a class="hot-a" href="#">
-                            <p>
-                                <span>Puritan‘s Pride</span>
-                                <p> 普丽普莱 全家人的健康管理师</p>
-
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            </a>
         </div>
+        <div id="myPage"></div>
+    </div>
     </div>
 
 
 
 
 
-    <!---------- footer 三部分 footer-1 2 3 ---------------->
-    <div class="footer-1">
-        <div class="margin">
-            <ul class="service">
-                <li>
-                    <i class="service-i1"></i>
-                    <strong>100%正品</strong>
-                    <span>全球精品 正品保障</span>
-                </li>
-                <li>
-                    <i class="service-i2"></i>
-                    <strong>低价保障</strong>
-                    <span>缩减中间环节 确保低价</span>
-                </li>
-                <li>
-                    <i class="service-i3"></i>
-                    <strong>7天无忧退货</strong>
-                    <span>国内退货 售后无忧</span>
-                </li>
-                <li>
-                    <i class="service-i4"></i>
-                    <strong>专业营养师</strong>
-                    <span>一对一定制健康生活</span>
-                </li>
-            </ul>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!---------- footer 三部分 footer-1 2 3 ---------------->
+ <div class="footer-1">
+    <div class="margin">
+        <ul class="service">
+            <li>
+                <i class="service-i1"></i>
+                <strong>100%正品</strong>
+                <span>全球精品 正品保障</span>
+            </li>
+            <li>
+                <i class="service-i2"></i>
+                <strong>低价保障</strong>
+                <span>缩减中间环节 确保低价</span>
+            </li>
+            <li>
+                <i class="service-i3"></i>
+                <strong>7天无忧退货</strong>
+                <span>国内退货 售后无忧</span>
+            </li>
+            <li>
+                <i class="service-i4"></i>
+                <strong>专业营养师</strong>
+                <span>一对一定制健康生活</span>
+            </li>
+        </ul>
     </div>
-    <!-- ------------------foot 底部第二部分（黑色）------------ -->
-    <div class="footer-2">
-        <div class="margin">
-            <ul>
-                <li>
-                    <b>新手指南</b>
-                    <a href="#">购物流程</a>
-                    <a href="#">注册登录</a>
-                    <a href="#">会员制度</a>
-                    <a href="#">常见问题</a>
-                </li>
-                <li>
-                    <b>关于配送</b>
-                    <a href="#">配送费用</a>
-                    <a href="#">收货验证</a>
-                    <a href="#">配货方式</a>
-                </li>
-                <li>
-                    <b href="#">关于支付</b>
-                    <a href="#">在线支付</a>
-                    <a href="#">优惠价使用</a>
-                    <a href="#">货到付款</a>
-                    <a href="#">发票</a>
-                </li>
-                <li>
-                    <b>售后服务</b>
-                    <a href="#">投诉建议</a>
-                    <a href="#">退换货政策</a>
-                    <a href="#">退还流程</a>
-                    <a href="#">营养师服务</a>
-                </li>
-            </ul>
-            <div class="footer-2-c">
-                <h5>400-189-1399</h5>
-                <div class="footer-2-c1">
-                    <b>周一到周日</b>
-                    <b>8:200~22:30</b>
-                </div>
+</div>
+<!-- ------------------foot 底部第二部分（黑色）------------ -->
+<div class="footer-2">
+    <div class="margin">
+        <ul>
+            <li>
+                <b>新手指南</b>
+                <a href="#">购物流程</a>
+                <a href="#">注册登录</a>
+                <a href="#">会员制度</a>
+                <a href="#">常见问题</a>
+            </li>
+            <li>
+                <b>关于配送</b>
+                <a href="#">配送费用</a>
+                <a href="#">收货验证</a>
+                <a href="#">配货方式</a>
+            </li>
+            <li>
+                <b href="#">关于支付</b>
+                <a href="#">在线支付</a>
+                <a href="#">优惠价使用</a>
+                <a href="#">货到付款</a>
+                <a href="#">发票</a>
+            </li>
+            <li>
+                <b>售后服务</b>
+                <a href="#">投诉建议</a>
+                <a href="#">退换货政策</a>
+                <a href="#">退还流程</a>
+                <a href="#">营养师服务</a>
+            </li>
+        </ul>
+        <div class="footer-2-c">
+            <h5>400-189-1399</h5>
+            <div class="footer-2-c1">
+                <b>周一到周日</b>
+                <b>8:200~22:30</b>
             </div>
-            <div class="footer-2-r">
-                <img src="./imgaes/head/QRcode.png" />
-                <span>手机商城</span>
-            </div>
-            <div class="footer-2-r">
-                <img src="./imgaes/head/QRcode.png" />
-                <span>官方微信</span>
-            </div>
-
-
-
         </div>
-    </div>
-
-    <!-- ------------------foot 底部第三部分（黑色）------------ -->
-    <div class="footer-3">
-        <div class="margin">
-            <div class="footer-3-t">
-                <a href="#">关于我们</a>
-                <span>|</span>
-                <a href="#">联系我们</a>
-                <span>|</span>
-                <a href="#">商城合作</a>
-                <span>|</span>
-                <a href="#">招贤纳士</a>
-                <span>|</span>
-                <a href="#">友情链接</a>
-                <span>|</span>
-                <a href="#">网站地图</a>
-            </div>
-            <div class="footer-3-c">
-                <a href="#">企业营业执照</a>
-                <a href="#">食品经营许可证</a>
-                <a href="#">增值电信业务经营许可证</a>
-                <a href="#">备案号：湘ICP备11008736号-3</a>
-            </div>
-            <p>Copyright @ 2013-2020 湖南紫一健康产业有限公司 版权所有</p>
-            <a href="#"><img src="./imgaes/head/guohui.png" /></a>
+        <div class="footer-2-r">
+            <img src="./imgaes/head/QRcode.png" />
+            <span>手机商城</span>
         </div>
-    </div>
+        <div class="footer-2-r">
+            <img src="./imgaes/head/QRcode.png" />
+            <span>官方微信</span>
+        </div>
 
-    <script src="./libs/jquery.js"></script>
-    <script src="./libs/swiper.min.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/ctrl.js"></script>
-    <script src="./js/home.js"></script>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------foot 底部第三部分（黑色）------------ -->
+<div class="footer-3">
+    <div class="margin">
+        <div class="footer-3-t">
+            <a href="#">关于我们</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#">商城合作</a>
+            <span>|</span>
+            <a href="#">招贤纳士</a>
+            <span>|</span>
+            <a href="#">友情链接</a>
+            <span>|</span>
+            <a href="#">网站地图</a>
+        </div>
+        <div class="footer-3-c">
+            <a href="#">企业营业执照</a>
+            <a href="#">食品经营许可证</a>
+            <a href="#">增值电信业务经营许可证</a>
+            <a href="#">备案号：湘ICP备11008736号-3</a>
+        </div>
+        <p>Copyright @ 2013-2020 湖南紫一健康产业有限公司 版权所有</p>
+        <a href="#"><img src="./imgaes/head/guohui.png" /></a>
+    </div>
+</div>
 
 </body>
-
+<script src="./libs/jquery.js"></script>
+<script src="./js/header.js"></script>
+<script src="./libs/jquery.sPage.js"></script>
+<script src="./js/list.js"></script>
 
 </html>
