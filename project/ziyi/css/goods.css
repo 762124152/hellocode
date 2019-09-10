@@ -1,5 +1,39 @@
 /* 商品详情css */
 .goods-title{font:18px/56px "";}
-.goods-title a:hover{color:greenyellow};
-.goods-main{display: flex; justify-content: space-between;}
-.goods-main .mian-l img{width: 450px; height: 450px;}
+.goods-title a:hover{color:greenyellow}
+.goods-main{display: flex; }
+.goods-main .main-l{margin-right: 40px; position: relative;}
+.goods-main .loupe{width:80px; height: 80px; background: #000; opacity: 0.1; position: absolute; display: none; left: 262px; right: 295px; z-index: 999;}
+.goods-main .main-l .bigImg{width:450px; height: 450px; position: absolute; z-index: 999; 
+    left:450px ; top: 0; overflow: hidden;display: none; 
+}
+
+.goods-main .main-l img{width: 450px; height: 450px;}s
+.goods-main .main-l .bigimg img{width:300px; height: 300px;}
+.goods-main .main-l span{display: block; width:100px;font:12px/24px ""; margin: 0 0 50px 160px; }
+.goods-main .main-c{margin-right: 60px;}
+.goods-main .main-c h5{font: 22px/66px "";}
+.goods-main .main-c .c-price{width:350px; border-bottom: 1px solid #ccc; padding-bottom: 10px;}
+.goods-main .main-c .c-price i{font:16px/40px ""; }
+.goods-main .main-c .c-price b{color:red; font:24px/40px "";margin-right: 10px;}
+.goods-main .main-c .c-price span{color:#fff; background: red; font:14px/40px ""; }
+.goods-main .main-c .c-price em{margin-left: 20px; font:12px/40px ""; color:gray;}
+.goods-main .main-c .star{margin-top:20px;}
+.goods-main .main-c .star i{font:16px/24px ""; }
+.goods-main .main-c .star i span{margin-left: 10px; background: red; color:#fff;}
+.goods-main .main-c .star a{display: block; color:red; font:18px/28px ""; margin-top: 10px;}
+.goods-main .main-c .star form{margin-top: 10px;}
+.goods-main .main-c .star form span{font: 18px/40px "";}
+.goods-main .main-c .star form input[name="num"]{height: 40px; width: 80px;}
+.goods-main .main-c .c-buy{margin-top: 30px; display: flex;}
+.goods-main .main-c .c-buy a{height: 44px; width: 90px; display: block}
+.goods-main .main-c .c-buy .nowBuy{border: 1px solid red; text-align: center; font:16px/44px "";color:red;}
+.goods-main .main-c .c-buy .shoppingCar{ font:16px/44px "";color:#fff;background: red;text-align:center;margin-left: 20px;}
+.goods-main .main-c  p{margin-top: 10px;  font:12px/36px "";}
+.goods-main .main-r{border-left: 1px solid #ccc; height: 420px; padding:20px;}
+.goods-main .main-r img{border: 1px solid #ccc; display: block; margin-left: 13px; }
+.goods-main .main-r .dian{font:16px/36px ""; margin-left: 40px; display: block; font-weight: 700;}
+.goods-main .main-r .ruDian{display: block; width:100px; height: 30px; background: red; 
+    color:#fff; font:14px/30px ""; text-align: center; margin-left: 20px;
+}
+.goods-main .main-r .goodsnum{margin:30px; font:12px/24px "";}

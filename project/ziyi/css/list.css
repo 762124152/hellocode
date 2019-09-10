@@ -10,21 +10,21 @@
     color: red
 }
 
-.list a ul li i {
+.list a  i {
     font: 22px/26px "";
     color: red;
     margin-right: 15px;
     margin-left: 30px;
 }
 
-.list a ul li b {
+.list a  b {
     font: 14px/24px "";
     color: red;
     border: 1px solid red;
     padding: 2px;
 }
 
-.list a ul li p {
+.list a p {
     font: 16px/28px "";
     margin-left: 30px;
     width: 220px;
@@ -33,7 +33,7 @@
     text-overflow: ellipsis;
 }
 
-.list a ul .threeLi {
+.list a .threeLi {
     display: flex;
     justify-content: space-between;
     margin-left: 30px;

@@ -9,10 +9,10 @@
            this.footer3=document.getElementsByClassName("footer-3")[0];
            
            //表单正则验证
-           this.t=true
-           this.t1=true
-           this.t2=true
-           this.t3=true
+           this.t=false;
+           this.t1=false;
+           this.t2=false;
+           this.t3=false;
            //用户名判断
            this.userObj.onfocus=(e)=>{
                e=e||window.event;
