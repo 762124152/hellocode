@@ -26,7 +26,7 @@
 .top .top-right a span {
     color: purple
 }
-.topRightA2{display: none;}
+.topRightA2{display: inline-block;}
 
 /**************** logo和表单css ****************/
 
@@ -202,6 +202,9 @@ nav .menu-list li .menu-list2 dd a:hover {
 }
 
 
+/***************** 楼层 *******************/
+#fix{position: fixed; right: 0; bottom: 0; z-index: 999; width: 100px; height: 200px; background: eee; border: 1px solid #000;}
+#fix a{width: 100px; height: 50px; display: block; font:22px/50px ""; background: gold; opacity: 0.9;}
 
 
 /***************** 四个图标部分 footer1 *******************/

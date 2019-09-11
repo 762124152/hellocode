@@ -60,10 +60,8 @@
                 var e=e||window.event;
                 var targrt=e.target||e.srcElement;
                 this.id=targrt.parentNode.getAttribute("goodsId");
+             
                 localStorage.setItem("Id",JSON.stringify(this.id));
-            
-               
-               
             })
         }
         

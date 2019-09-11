@@ -10,7 +10,7 @@
 },{
     "goodsId":10002,
     "goodsImg":"./imgaes/list/list-2.jpg",
-    "goodsPrice":59.8,
+    "goodsPrice":59,
     "postAge":"货到付款",
     "evaluate":4195,
     "per":96.96,
@@ -28,7 +28,7 @@
 },{
     "goodsId":10004,
     "goodsImg":"./imgaes/list/list-4.jpg",
-    "goodsPrice":59.8,
+    "goodsPrice":59,
     "postAge":"包邮",
     "evaluate":4217,
     "per":95.8,
@@ -46,7 +46,7 @@
 },{
     "goodsId":10006,
     "goodsImg":"./imgaes/list/list-6.jpg",
-    "goodsPrice":59.8,
+    "goodsPrice":59,
     "postAge":"包邮",
     "evaluate":4454,
     "per":96.18,
@@ -82,6 +82,24 @@
 },{
     "goodsId":10010,
     "goodsImg":"./imgaes/list/list-10.jpg",
+    "goodsPrice":139,
+    "postAge":"包邮",
+    "evaluate":3240,
+    "per":94.98,
+    "introduce":"澳洲 Healthy Care/澳世康 葡萄籽精华胶囊 12000mg*300粒"
+
+},{
+    "goodsId":10011,
+    "goodsImg":"./imgaes/list/list-7.jpg",
+    "goodsPrice":139,
+    "postAge":"包邮",
+    "evaluate":3240,
+    "per":94.98,
+    "introduce":"澳洲 Healthy Care/澳世康 葡萄籽精华胶囊 12000mg*300粒"
+
+},{
+    "goodsId":10012,
+    "goodsImg":"./imgaes/list/list-6.jpg",
     "goodsPrice":139,
     "postAge":"包邮",
     "evaluate":3240,

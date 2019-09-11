@@ -5,13 +5,12 @@
         }
         //根据id值渲染页面
         load(){
+            var that=this;
             $.ajax({
                 url:"http://localhost/project/ziyi/data/list.json",
                 success(res){
                     this.id=localStorage.getItem("Id");
-                    
                     for(var i=0; i<res.length;i++){
-
                         this.n=this.id.slice(1,6);
                         if(res[i].goodsId==this.n){
                            this.str=`<a href="project/ziyi/home.html">首页</a>
@@ -66,11 +65,12 @@
                       
                     }
                     
+                    // ----------------------------------放大镜效果
                     this.loupeObj=document.getElementsByClassName("loupe")[0];
                     this.smallObj=document.getElementsByClassName("smallObj")[0];
                     this.bigImg=document.getElementsByClassName("bigImg")[0];
                     this.bigObj=document.getElementsByClassName("bigObj")[0];
-                
+                    //放大镜移动小黑框事件
                     this.smallObj.onmousemove=(eve)=>{
                         eve=eve||window.event;
                         this.mouseX=eve.offsetX; //鼠标移动坐标
@@ -95,48 +95,53 @@
                         this.bigObj.style.display="block";
                         this.bigImg.style.left=(-(this.loupeObj.offsetLeft/(this.smallObj.offsetWidth-this.loupeObj.offsetWidth))*(this.bigImg.offsetWidth-this.bigObj.offsetWidth))+"px";
                         this.bigImg.style.top=(-(this.loupeObj.offsetTop/(this.smallObj.offsetHeight-this.loupeObj.offsetHeight))*(this.bigImg.offsetHeight-this.bigObj.offsetHeight))+"px";
-
-
-
                         this.loupeObj.onmouseleave=()=>{
-                   
                             this.bigObj.style.display="none";
                             this.loupeObj.style.display="none";
                         }
-                        
-                       
                     }
-                    
                     this.btnObj=document.getElementsByName("num")[0];
                     this.shopObj=document.getElementsByClassName("shoppingCar")[0];
+                    this.btnObj.onchange=()=>{
+                        if(this.btnObj.value<1){
+                            this.btnObj.value=1;
+                        }
+                    }
+                    //点击购买事件
                     this.shopObj.onclick=(eve)=>{
-                        console.log(1);
                         eve=eve|| window.event;
-                        eve.preventDefault()||eve.returnValue;
-                        this.car=localStorage.getItem("car")?JSON.parse(localStorage.getItem("users")) : [];
+                        
+                        this.n=parseInt(this.n);
+                        this.car=localStorage.getItem("car")?JSON.parse(localStorage.getItem("car")) : [];
                         if(this.car.length<1){
                            this.car.push({
-                               id:this.id,
-                               price:this.price,
-                               num:this.btnObj.value
+                               id:parseInt(this.n),
+                               price:parseInt(this.price),
+                               num:parseInt(this.btnObj.value)
                            })
                        }else{
-                           this.state=ture;
+                           this.state=true;
                            for(var i=0;i<this.car.length;i++){
-                               if(this.car[i].id==this.id){
-                                   this.car[i].num+this.btnObj.value;
-                                   state=false;
-                               }
+                                if(this.car[i].id==this.n){
+
+                                    this.car[i].num=parseInt(this.car[i].num)
+                                    this.car[i].num+= parseInt(this.btnObj.value)
+                                    
+                                    this.state=false;
+                                }
                            }
-                           if(state){
+                           
+                           if(this.state==true){
                                this.car.push({
-                                    id:this.id,
-                                    price:this.price,
-                                    num:this.btnObj.value
+                                    id:parseInt(this.n),
+                                    price:parseInt(this.price),
+                                    num:parseInt(this.btnObj.value)
                                })
                            }
                        }
                        localStorage.setItem("car",JSON.stringify(this.car));
+                       
+                       window.location.href="car.html";
                     }
                 }
             })

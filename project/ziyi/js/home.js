@@ -17,12 +17,12 @@
                         </p>
                         <div class="main-part">
                             <div class="part-l">
-                                <a href="#">
+                                <a href="list.html">
                                     <img src="${res[i]["goods-l"]}" />
                                 </a>
                             </div>
                             <div class="part-c">
-                                <a href="#">
+                                <a href="list.html">
                                     <span>${res[i]["part-c1"]}</span>
                                     <div class="part-r-price"> 
                                         <i>￥${res[i]["c1-price"]}.00</i>
@@ -30,7 +30,7 @@
                                     </div>
                                     <img class="part-c-img" src="${res[i]["goods-1"]}" />
                                 </a>
-                                <a href="#">
+                                <a href="list.html">
                                     <span>${res[i]["part-c2"]}</span>
                                     <div class="part-r-price">
                                         <i>￥${res[i]["c2-price"]}.00</i>
@@ -38,7 +38,7 @@
                                     </div>
                                     <img class="part-c-img" src="${res[i]["goods-2"]}"/>
                                 </a>
-                                <a href="#">
+                                <a href="list.html">
                                     <span>${res[i]["part-c3"]}</span>
                                     <div class="part-r-price">
                                         <i>￥${res[i]["c3-price"]}.00</i>
@@ -46,7 +46,7 @@
                                     </div>
                                     <img class="part-c-img" src="${res[i]["goods-3"]}" />
                                 </a>
-                                <a href="#">
+                                <a href="list.html">
                                     <span>${res[i]["part-c4"]}</span>
                                     <div class="part-r-price">
                                         <i>￥${res[i]["c4-price"]}.90</i>
@@ -125,12 +125,15 @@
                 }
             })
 
-            this.a=JSON.parse(localStorage.getItem("state"));
+            this.a=JSON.parse(localStorage.getItem("status"));
             console.log(this.a);
-            if(this.a=1){
-                this.a1=document.getElementsByClassName("topRightA")[0];
-                this.a2=document.getElementsByClassName("topRightA2")[0];
-                this.a1.style.display="none";
+            this.a1=document.getElementsByClassName("topRightA")[0];
+            this.a2=document.getElementsByClassName("topRightA2")[0];
+            if(this.a=true){
+                this.a1.style.display="inline-block";
+                this.a2.style.display="none";
+            }else{
+                this.a1.style.display="inline-block";
                 this.a2.style.display="inline-block";
             }
             

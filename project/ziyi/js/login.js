@@ -26,9 +26,9 @@
             for(var i=0;i<this.users.length;i++){
                 if(this.users[i].user== this.userObj.value&&this.users[i].pass== this.passObj.value){
                     state=true;
-                    onoff=1;
+                    onoff=true;
                     window.location.href="home.html";
-                    localStorage.setItem("state",onoff)
+                    localStorage.setItem("denglu",onoff)
 
                 }
             }
